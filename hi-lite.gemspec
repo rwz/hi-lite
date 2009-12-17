@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "hi-lite.gemspec",
      "lib/hi-lite.rb",
      "lib/hi-lite/css_embedder.rb",
      "lib/hi-lite/css_file.rb",

@@ -10,7 +10,10 @@ begin
     gem.email = "rwz@duckroll.ru"
     gem.homepage = "http://github.com/rwz/hi-lite"
     gem.authors = ["Pavel Pravosud"]
-    # gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "nokogiri"
+    gem.add_development_dependency "ultraviolet"
+    gem.add_dependency "nokogiri"
+    gem.add_dependency "ultraviolet"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

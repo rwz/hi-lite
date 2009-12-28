@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hi-lite}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pavel Pravosud"]
-  s.date = %q{2009-12-17}
+  s.date = %q{2009-12-28}
   s.description = %q{Textmate-like source code highlighting}
   s.email = %q{rwz@duckroll.ru}
   s.extra_rdoc_files = [

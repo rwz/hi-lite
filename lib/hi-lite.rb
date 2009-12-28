@@ -23,7 +23,23 @@ module HiLite
       Uv.syntaxes
     end
     
+    def nice_lang_list
+      lang_list.inject(Hash.new) { |langs, s| langs.merge!({ s => nicer(s) }) }
+    end
+    
     private
+    
+    LANGS_REGISTER = %w(CSS HTML XML CSV PHP XHTML JSON IO ActionScript SSH SQL ML lighttpd ASP ASP.NET VB.NET jQuery man GreaseMonkey)
+    
+    def nicer(lang)
+      result = lang.dup
+      result.gsub!(/[_-]+/, " ")
+      register = LANGS_REGISTER.map{ |s| s.downcase }
+      result = result.downcase.split.map{ |s| register.include?(s) ? LANGS_REGISTER[register.index(s)] : s.capitalize }.join(" ")
+      result.gsub!(/script/i, "Script")
+      result.gsub!(/wiki/i, "Wiki")
+      result
+    end
     
     def parse(code, opts)
       Parser.parse(code, opts)

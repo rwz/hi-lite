@@ -29,7 +29,7 @@ module HiLite
     
     private
     
-    LANGS_REGISTER = %w(CSS HTML XML CSV PHP XHTML JSON IO ActionScript SSH SQL ML lighttpd ASP ASP.NET VB.NET jQuery man GreaseMonkey)
+    LANGS_REGISTER = %w(CSS HTML XML XSL YAML CSV PHP XHTML JSON IO ActionScript SSH SQL ML lighttpd ASP ASP.NET VB.NET jQuery man GreaseMonkey)
     
     def nicer(lang)
       result = lang.dup
